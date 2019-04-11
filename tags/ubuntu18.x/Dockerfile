@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 ARG VERSION=2018.3
 ARG FILE=petalinux-v2018.3-final-installer.run
-
+ENV DEBIAN_FRONTEND=noninteractive
 #init files
 ADD accept-eula.sh /
 ADD sdk/${VERSION} /tmp/petalinux
@@ -76,10 +76,10 @@ RUN adduser --disabled-password --gecos '' vivado \
 # Install bash4.3 to fit wired vivado software && Replace the bash
 RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 RUN wget http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-14ubuntu1_amd64.deb  \
-    && sudo apt-get install ./bash_4.3-14ubuntu1_amd64.deb -y --allow-downgrades \
+    && apt-get install ./bash_4.3-14ubuntu1_amd64.deb -y --allow-downgrades \
     && rm ./bash_4.3-14ubuntu1_amd64.deb \
-    && sudo rm /bin/sh \
-    && sudo ln -s /bin/bash /bin/sh
+    && rm /bin/sh \
+    && ln -s /bin/bash /bin/sh
 
 # run the install
 RUN chmod a+x /${FILE}  \
