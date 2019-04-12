@@ -17,7 +17,7 @@ Attention: Current petalinux version is <span style="color:red"> *2018.3* </span
 
 - monius/petalinux:ubuntu16 (Test passed)
 - monius/petalinux:ubuntu18 (Test passed)
-- monius/petalinux:debian9  (Installed passed, test failed)
+- monius/petalinux:debian9  (Installation passed, test failed)
 
 ## Tips
 
