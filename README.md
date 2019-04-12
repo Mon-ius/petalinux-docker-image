@@ -19,11 +19,16 @@ Attention: Current petalinux version is <span style="color:red"> *2018.3* </span
 - monius/petalinux:ubuntu18 (Test passed)
 - monius/petalinux:debian9  (Installation passed, test failed)
 
+## Builds
+
+- `petalinux:ubuntu16.x`: [Tags/ubuntu16.x](https://github.com/Mon-ius/petalinux-docker-image/blob/master/tags/ubuntu16.x/Dockerfile)
+- `petalinux:ubuntu18.x`: [Tags/ubuntu18.x](https://github.com/Mon-ius/petalinux-docker-image/blob/master/tags/ubuntu18.x/Dockerfile)
+- `petalinux:debian9.x` : [Tags/debian9.x](https://github.com/Mon-ius/petalinux-docker-image/blob/master/tags/debian9.x/Dockerfile)
+
 ## Tips
 
 - Large files in git : `git lfs install`
 - To exit QEMU : press Ctrl+A together, release and then press X.
-
 
 ## MIT License
 
