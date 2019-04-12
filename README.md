@@ -8,7 +8,10 @@ Attention: Current petalinux version is <span style="color:red"> *2018.3* </span
 
 ## Usage
 
-` docker run -it monius/petalinux` (defualt: ubuntu16.x)
+- ` docker run -it monius/petalinux:latest` (defualt: ubuntu16.x)
+- ` docker run -it monius/petalinux:ubuntu16.x` 
+- ` docker run -it monius/petalinux:ubuntu18.x` 
+- ` docker run -it monius/petalinux:debian9.x` 
 
 ## Tags
 
