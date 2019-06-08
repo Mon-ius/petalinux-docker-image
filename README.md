@@ -34,7 +34,7 @@ Attention: Current petalinux version is <span style="color:red"> *2018.3* </span
 
 ### 2019.1
 
-> sudo apt-get install -y gcc git make net-tools libncurses5-dev tftpd zlib1g-dev libssl-dev flex
+> sudo apt-get install -y libtool-bin gcc git make net-tools libncurses5-dev tftpd zlib1g-dev libssl-dev flex
 bison libselinux1 gnupg wget diffstat chrpath socat xterm autoconf libtool tar unzip texinfo
 zlib1g-dev gcc-multilib build-essential zlib1g:i386 screen pax gzip
 
