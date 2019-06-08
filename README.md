@@ -30,6 +30,12 @@ Attention: Current petalinux version is <span style="color:red"> *2018.3* </span
 - Large files in git : `git lfs install`
 - To exit QEMU : press Ctrl+A together, release and then press X.
 
+## Mannual install
+
+> sudo apt-get install -y gcc git make net-tools libncurses5-dev tftpd zlib1g-dev libssl-dev flex
+bison libselinux1 gnupg wget diffstat chrpath socat xterm autoconf libtool tar unzip texinfo
+zlib1g-dev gcc-multilib build-essential -dev zlib1g:i386 screen pax gzip
+
 ## MIT License
 
 Copyright (c) 2019 Monius
